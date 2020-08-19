@@ -64,6 +64,21 @@ body {margin:0;font-family:Arial}
  .img-container {
    text-align: center;
 }
+
+ .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+ .profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
@@ -135,6 +150,8 @@ body {margin:0;font-family:Arial}
   <p>I'm currently enrolled in Georgia Tech working on Data Science. </p>
   <p>Placeholder</p>
   <p><div class="img-container"><img src="images/logo.png" alt="Centered Div Cartoon"></div> </p>
+  <p><div class="image-cropper"> <img src="images/logo.png" alt="avatar" class="profile-pic"> </p>
+</div>
 </div>
 
 <script>
