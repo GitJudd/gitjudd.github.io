@@ -27,53 +27,215 @@
                 <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/juddf/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#game">D3js Game</a></li>
+                        
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skill Tree</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#etl">ETL</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#game">Fun</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                    
                     </ul>
                 </div>
             </div>
         </nav>
-        
+
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
+
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Skills</h1>
+                <h1 class="masthead-heading text-uppercase mb-0" id="skills">Skills</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-cubes"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <div class="row justify-content-center">
+                    <div class="col-md-12 mx-auto">
+                        <div class="row">
+                            <div class="col-lg-12 ml-auto"><p class="lead">Interactive Skill Tree - Created with D3js.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="skilltree.html" style="height:335px; width: 964px;" scrolling="no" frameBorder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+                <!-- About Section-->
+                <section class="page-section " id="about">
+                    <div class="container">
+                        <!-- About Section Heading-->
+                        <h2 class="page-section-heading text-center text-uppercase text-secondary">About</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-user-graduate"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- About Section Content-->
+                        <div class="row">
+                            <div class="col-lg-12 ml-auto"><p class="lead">Data analyst with a system administrator background including network infrastructure and Georgia Tech’s data analytics and visualization bootcamp. Skilled in VBA, Python, Pandas, PostgreSQL, JavaScript, and many JS frameworks like Bootstrap and jQuery. Insatiable intellectual curiosity and drive to troubleshoot problems and inconsistencies within data and interfaces. Enjoys leveraging background and skill set to support detailed and efficient analysis. Recently completed a project in a team of three using OpenAI’s GPT-2, Python, JavaScript, Flask, and Google Collab to create a chat application with the ability to train chat functionality.  Strengths including analytical problem-solving abilities combined with collaborating across diverse groups, makes me a valuable addition to any team.</p></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Portfolio Section-->
+                <section class="page-section portfolio bg-primary text-white mb-0" id="portfolio">
+                    <div class="container">
+                        <!-- Portfolio Section Heading-->
+                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        
+                        <!-- Portfolio Grid Items-->
+                        <div class="row justify-content-center">
+                            <!-- Portfolio Item 1-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/earthquake.png" alt="" />
+                                    <div class="text-block"><p>Geo-Mapping with Leaflet.js</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 2-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/united.png" alt="" />
+                                    <div class="text-block"><p>D3js Example</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 3-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/web-dashboard.png" alt="" />
+                                    <div class="text-block"><p>Dashboard Example</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 4-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/billiard.png" alt="" />
+                                    <div class="text-block"><p>Group Project </br> Machine Learning (OpenAI GPT-2)</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 5-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/pokemon.png" alt="" />
+                                    <div class="text-block"><p>Group Project </br> ETL</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 6-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/grinning-panda.png" alt="" />
+                                    <div class="text-block"><p>Group Project </br> ETL</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 7-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/ufo.png" alt="" />
+                                    <div class="text-block"><p>Javascript Example</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 8-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/dashboard.png" alt="" />
+                                    <div class="text-block"><p>Flask and SQL Alchemy Example</p></div>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 9-->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid1 " src="assets/img/portfolio/medicine-jar.png" alt="" />
+                                    <div class="text-block"><p>Matplotlib Example (GitHub Repo Only)</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 ml-auto"><p></br><hr>Icons courtesy of <a href="https://iconscout.com/" target="_blank">iconscout.com</a> under their free license. They have been slightly edited to fit the theme. Visit their site for more information!
+                        </br>Warning - link opens in a new window!</p>
+                    </div>
+                    
+                </section>
+
+
+
+        <!-- Contact Section-->
+        <section class="page-section" id="etl">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">ETL - Extract - Transform - Load</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-sync fa-spin"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Extract - Transform - Load</p>
-            </div>
-        </header>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
 
-        <!-- Contact Section-->
-        <section class="page-section" id="game">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section-->
+        <section class="page-section bg-primary text-white mb-0" id="game">
             <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">D3js - Sample</h2>
+                <!-- Game Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">D3js - Sample</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-gamepad"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
+                <!-- Game Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-11 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                         <iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="bounceball.html" style="height:504px; width: 964px;" scrolling="no" frameBorder="0"></iframe>
                     </div>
-                    <p>Let's start with something fun! We'll take a step back to the early 90's Microsoft Entertainment Pack. I know Minesweeper was a hit that helped a generation learn to use a computer mouse! I even know people that still play FreeCell with their morning coffee. SkiFree was always a good time killer, too. But my 90's time wasting addiction was always JezzBall and similar spin-offs. Here is a D3js rendition. It is setup similar to the original game starting with two "atoms" bouncing about a room. Point at a position within the room and click the mouse to start building either vertical or horizontal lines, or "walls".</p>
+                    <p>Here is another D3js example with an extra element of fun! We'll take a step back to the early 90's Microsoft Entertainment Pack. I know Minesweeper was a hit that helped a generation learn to use a computer mouse! I even know people that still play FreeCell with their morning coffee. SkiFree was always a good time killer, too. But my 90's time wasting addiction was always JezzBall and similar spin-offs. Here is a D3js rendition. It is setup similar to the original game starting with two "atoms" bouncing about a room. Point at a position within the room and click the mouse to start building either vertical or horizontal lines, or "walls".</p>
                     <ul>
                         <li>Note #1: Normally you have the same lives per level as the number of atoms. I added an extra 2 lives per level to make the gameplay a little more friendly.</li>
                         <li>Note #2: Scrolling the mouse wheel or clicking on a corner square changes the rotation of the cursor!</li>
@@ -82,63 +244,7 @@
             </div>
         </section>
 
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="skills">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Skill Tree</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-cubes"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row justify-content-center">
-                    <div class="col-md-11 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="skilltree.html" style="height:400px; width: 964px;" scrolling="no" frameBorder="0"></iframe>
-                    </div>
-                </div>
-                    
-                </div>
-            </div>
-        </section>
 
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-chart-pie"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-user-graduate"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-12 ml-auto"><p class="lead">Data analyst with a system administrator background including network infrastructure and Georgia Tech’s data analytics and visualization bootcamp. Skilled in VBA, Python, Pandas, PostgreSQL, JavaScript, and many JS frameworks like Bootstrap and jQuery. Insatiable intellectual curiosity and drive to troubleshoot problems and inconsistencies within data and interfaces. Enjoys leveraging background and skill set to support detailed and efficient analysis. Recently completed a project in a team of three using OpenAI’s GPT-2, Python, JavaScript, Flask, and Google Collab to create a chat application with the ability to train chat functionality.  Strengths including analytical problem-solving abilities combined with collaborating across diverse groups, makes me a valuable addition to any team.</p></div>
-                </div>
-            </div>
-        </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -191,17 +297,403 @@
                 </div>
             </div>
         </section>
-        <!-- Footer-->
-        
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © Judd Fowler 2020</small></div>
+            <div class="container"><small>Copyright © Justin "Judd" Fowler 2020</small></div>
         </div>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Visualizing Data with Leaflet</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-meteor"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/earthquake.png" alt="" />
+                                                                        <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 lead"><u>Project Notes</u>:
+                                        I enjoyed this project the most. It certainly took the most effort to mold the final product like I envisioned. The Data is courtesy of http://earthquake.usgs.gov/. The other features include CCShake for the quake animation on hover, d3js, leaflet.js, mapbox with additional CSS overlays, a custom leaflet heatmap JS, as well as a customized Modernizr build. While there is a whole lot going on in the background, I feel like the end-user is left with a clean, informative experience. 
+                                    <hr>
+                                    <a href="https://gitjudd.github.io/leaflet-challenge/">View the final product here.</a> -OR- <a href="https://gitjudd.github.io/leaflet-challenge/" target="_blank">Open the final site in a new window here.</a>
+                                    </br>
+                                    <a href="https://github.com/GitJudd/leaflet-challenge" target="_blank">Github Repo with assignment details. Opens in new window.</a>  
+                                    <hr>
+                                    Here are screenshots from Georgia Tech's grading team: 
+                                    </br>
+                                    <img class="img-fluid1 rounded mb-5" src="assets/img/grades/leaflet.PNG" alt="" />
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">D3js Challenge</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-heartbeat"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/united.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 lead"><u>Project Notes</u>:
+                                    If it is not obvious from this portfolio page, I really enjoy working with D3js. It does have certain limitations that can be overcome with the additional use of other frameworks and libraries for styling. The dynamic, interactive visualizations that it produces for web browsers is fantastic!
+                                    <hr>
+                                    <a href="https://gitjudd.github.io/D3-challenge/">View the final product here.</a> -OR- <a href="https://gitjudd.github.io/D3-challenge/" target="_blank">Open the final site in a new window here.</a>
+                                    </br>
+                                    <a href="https://github.com/GitJudd/D3-challenge" target="_blank">Github Repo with assignment details. Opens in new window.</a>  
+                                    <hr>
+                                    Here are screenshots from Georgia Tech's grading team: 
+                                    </br>
+                                    <img class="img-fluid1 rounded mb-5" src="assets/img/grades/d3js.PNG" alt="" />
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Web Design Challenge</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/web-dashboard.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 lead"><u>Project Notes</u>:
+                                        This challenge didn’t ask for a full dashboard, however it felt like the right decision by the time I was finished creating the comparisons. This wasn’t the first time I’ve worked with a dashboard and because of the scope of the data, I had to remove a majority of the backend features for a clean look. The interactive testing would be more robust if the original data was in a format outside of static images. The data for this project was imported via a CSV file with Pandas and converted into a responsive, stylized HTML table.                                       
+                                    <hr>
+                                    <a href="https://gitjudd.github.io/Web-Design-Challenge/">View the final product here.</a> -OR- <a href="https://gitjudd.github.io/Web-Design-Challenge/" target="_blank">Open the final site in a new window here.</a>
+                                    </br>
+                                    <a href="https://github.com/GitJudd/Web-Design-Challenge" target="_blank">Github Repo with assignment details. Opens in new window.</a>  
+                                    <hr>
+                                    Here are screenshots from Georgia Tech's grading team: 
+                                    </br>
+                                    <img class="img-fluid1 rounded mb-5" src="assets/img/grades/webdesign.PNG" alt="" />
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-balance-scale-right"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                     <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/billiard.png" alt="" />
+                                     <!-- Portfolio Modal - Text-->
+                                     <p class="mb-5 lead"><u>Project Notes</u>:
+                                         ---                                       
+                                     <hr>
+                                     <a href="https://github.com/GitJudd/gitfinal2" target="_blank">My Github Repo - Copy. Opens in new window.</a>  
+                                    </br>
+                                     <a href="https://github.com/admercier/final_project" target="_blank">Team member's original Github Repo with commits. Opens in new window.</a>  
+                                     </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Extract, Transform, Load - Pokemon Project</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-feather-alt"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                     <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/pokemon.png" alt="" />
+                                     <!-- Portfolio Modal - Text-->
+                                     <p class="mb-5 lead"><u>Project Notes</u>:
+                                        -----                                       
+                                     <hr>
+                                     <a href="https://gitjudd.github.io/teamtriangle/">View the final product here.</a> -OR- <a href="https://gitjudd.github.io/teamtriangle/" target="_blank">Open the final site in a new window here.</a>
+                                     </br>
+                                     <a href="https://github.com/GitJudd/teamtriangle" target="_blank">Github Repo with assignment details. Opens in new window.</a>  
 
+                                     </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">ETL - Anime</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-hat-wizard"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                     <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/grinning-panda.png" alt="" />
+                                     <!-- Portfolio Modal - Text-->
+                                     <p class="mb-5 lead"><u>Project Notes</u>:
+                                    -----                                       
+                                     <hr>
+                                     <a href="https://gitjudd.github.io/etlgroupproject/">View the final product here.</a> -OR- <a href="https://gitjudd.github.io/etlgroupproject/" target="_blank">Open the final site in a new window here.</a>
+                                     </br>
+                                     <a href="https://github.com/GitJudd/etlgroupproject" target="_blank">My Github Repo. Opens in new window.</a>  
+                                     </br>
+                                     <a href="https://github.com/BrandonTownsend/ETL_Challenge" target="_blank">Team member's Github Repo with more information. Opens in new window.</a>  
+                                     </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Javascript Challenge</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-moon"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                     <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/ufo.png" alt="" />
+                                     <!-- Portfolio Modal - Text-->
+                                     <p class="mb-5 lead"><u>Project Notes</u>:
+                                         The goal was to filter data with a search feature. At a minimum, we needed to be able to filter by searching dates. Using bootstrap, jquery, and a javascript function to create an event handler, I added a search panel within a div element that filters all of the data including the basic date search.             
+                                     <hr>
+                                     <a href="https://gitjudd.github.io/javascript-challenge/UFO-level-2/index.html">View the final product here.</a> -OR- <a href="https://gitjudd.github.io/javascript-challenge/UFO-level-2/index.html" target="_blank">Open the final site in a new window here.</a>
+                                     </br>
+                                     <a href="https://github.com/GitJudd/javascript-challenge" target="_blank">Github Repo with assignment details. Opens in new window.</a>  
+                                     <hr>
+                                     Here are screenshots from Georgia Tech's grading team: 
+                                     </br>
+                                     <img class="img-fluid1 rounded mb-5" src="assets/img/grades/javascript.PNG" alt="" />
+                                     </p><button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">SQL, SQL Alchemy, & Flask!</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-flask"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                     <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/dashboard.png" alt="" />
+                                     <!-- Portfolio Modal - Text-->
+                                     <p class="mb-5 lead"><u>Project Notes</u>:
+                                        There isn’t a great way to host SQL files directly on GitHub without the help of something like Heroku for the Flask app. That being said, the following links should show understanding of different SQL elements. There are two separate repos below. </br>
+                                        The first example is basic table schema for multiple CSV files including primary and foreign keys and then running queries to analyze the data. </br>
+                                        The second example was completed using SQLAlchemy ORM queries, Pandas, and Matplotlib. The goal was to research various locations historical weather data for the previous year. To complete the task, I used Flask’s “jsonify” to convert the API data into a valid JSON response object.                                                                             
+                                     <hr>
+                                     <a href="https://github.com/GitJudd/SQL-challenge" target="_blank">Basic SQL Repo. Opens in new window.</a>
+                                     </br>
+                                     <a href="https://github.com/GitJudd/SQLAlchemy-Challenge" target="_blank">SQL Alchemy with Flask. Opens in new window.</a>  
+                                     <hr>
+                                     Here are screenshots from Georgia Tech's grading team: 
+                                     </br>
+                                     <img class="img-fluid1 rounded mb-5" src="assets/img/grades/sqlflask.PNG" alt="" />
+                                     </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 9-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Matplotlib Challenge</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-prescription"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                     <!-- Portfolio Modal - Image-->
+                                     <img class="img-fluid2 rounded mb-5" src="assets/img/portfolio/medicine-jar.png" alt="" />
+                                     <!-- Portfolio Modal - Text-->
+                                     <p class="mb-5 lead"><u>Project Notes</u>:
+                                        Starting out, this was a very challenging task and it really helped drive home the concept of telling a story with data. It required filtering and cleaning data then using mean, median, variance, and standard deviation to plot the data. Both pyplot and Panda’s DataFrame.plot() were used to accomplish the various bar, pie, box and whisker plots. The project was wrapped up after calculating the correlation coefficient and linear regression models for the data.                                        
+                                     <hr>
+                                     
+                                     <a href="https://github.com/GitJudd/matplotlib-challenge" target="_blank">Github Repo with assignment details. Opens in new window.</a>  
+                                     <hr>
+                                     Here are screenshots from Georgia Tech's grading team: 
+                                     </br>
+                                     <img class="img-fluid1 rounded mb-5" src="assets/img/grades/matplotlib.PNG" alt="" />
+                                     </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
